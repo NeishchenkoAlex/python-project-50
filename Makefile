@@ -15,3 +15,5 @@ check: test lint
 test:
 	uv run pytest
 
+test-coverage:
+	uv run pytest --cov --cov-report xml:coverage.xml
