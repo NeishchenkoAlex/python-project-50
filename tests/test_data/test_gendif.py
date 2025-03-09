@@ -1,10 +1,11 @@
 import pytest
+
 from gendiff.logic_gendiff import gen_diff
 
 
 @pytest.fixture
 def test_result():
-  return """{
+    return """{
   - Alex: Neishchenko
   - check: null
     follow: false
@@ -19,6 +20,7 @@ def test_result():
     timeout: 50
 }"""
 
+
 def test_logic_gendiff(test_result):
-    assert gen_diff('tests/files/file1.json', 'tests/files/file2.json')==test_result
+    assert gen_diff('tests/files/file1.json', 'tests/files/file2.json') == test_result
 
