@@ -26,7 +26,7 @@ def gen_diff(file1, file2):
     return '\n'.join(s).replace('False', 'false').replace('True', 'true').replace('None', 'null')  # возвращаем строку(заменяем булевы значения)
 
 
-
+print(gen_diff('tests/files/file1.json', 'tests/files/file2.json'))
 
     
 
