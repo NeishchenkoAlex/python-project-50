@@ -5,7 +5,10 @@ description = "gendiff"
 readme = "README.md"
 authors = [{name = "AlexNeishchenko", email = "br.cheg@mail.ru"}]
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "pytest>=8.3.5",
+    "ruff>=0.9.9",
+]
 
 [build-system]
 requires = ["hatchling"]
