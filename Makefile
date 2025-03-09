@@ -17,4 +17,4 @@ test:
 
 test-coverage:
 	uv run pytest --cov --cov-report xml:coverage.xml
-install: version
+
