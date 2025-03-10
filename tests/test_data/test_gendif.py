@@ -4,7 +4,7 @@ from gendiff.logic_gendiff import gen_diff
 
 
 @pytest.fixture
-def test_result():
+def expected_result():
     return """{
   - Alex: Neishchenko
   - check: null
@@ -21,8 +21,13 @@ def test_result():
 }"""
 
 
-def test_logic_gendiff(test_result):
-    assert gen_diff('tests/files/file1.json', 'tests/files/file2.json') == test_result
+def test_logic_gendiff(expected_result):
+    assert gen_diff('tests/fixtures/file1.json', 'tests/fixtures/file2.json') == expected_result
+
+
+
+
+
 
 
 
