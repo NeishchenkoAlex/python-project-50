@@ -1,2 +1,0 @@
-def stylish(result):
-    
