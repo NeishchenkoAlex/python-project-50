@@ -1,6 +1,6 @@
 import pytest
 
-from gendiff.logic_gendiff import gen_diff
+from gendiff.logic_gendiff import generate_diff
 
 
 @pytest.fixture
@@ -22,7 +22,7 @@ def expected_result():
 
 
 def test_logic_gendiff(expected_result):
-    assert gen_diff('tests/fixtures/file1.json', 'tests/fixtures/file2.json') == expected_result
+    assert generate_diff('tests/fixtures/file1.json', 'tests/fixtures/file2.json') == expected_result
 
 
 

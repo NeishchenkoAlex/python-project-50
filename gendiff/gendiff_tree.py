@@ -25,7 +25,7 @@ def build_tree(data1, data2):
     return result
 
 
-print(build_tree(data1, data2))
+
     
     
 
