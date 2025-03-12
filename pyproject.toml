@@ -4,9 +4,11 @@ version = "0.1.0"
 description = "gendiff"
 readme = "README.md"
 authors = [{name = "AlexNeishchenko", email = "br.cheg@mail.ru"}]
-requires-python = ">=3.13"
+requires-python = ">=3.8.1"
 dependencies = [
     "pytest>=8.3.5",
+    "pyyaml>=6.0.2",
+    "pytest-cov >= 4.0.0",
     "ruff>=0.9.9",
 ]
 

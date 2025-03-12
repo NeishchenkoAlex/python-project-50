@@ -1,11 +1,23 @@
 import json
 
+import yaml
+
+
+def load_file(file):
+    extension = file.split('.')[-1]
+    if extension == 'json':
+        with open(f'{file}', 'r') as file:  # открытие json
+            return json.load(file)
+    if extension == 'yaml' or extension == 'yml':
+        with open(f'{file}') as file:
+            return yaml.load(file, Loader=yaml.FullLoader)
+    else:
+        raise ValueError(f"Unknown format: {extension}")
+        
 
 def gen_diff(file1, file2):
-    with open(f'{file1}', 'r') as file:  # открытие json
-        data1 = json.load(file)  # чтение json
-    with open(f'{file2}', 'r') as file:
-        data2 = json.load(file)
+    data1 = load_file(file1)
+    data2 = load_file(file2)
     merge = sorted(set(data1) | set(data2))  # мердж-обеденение-сортировка по ключам в список
 
     s = []  # строка для вывода
