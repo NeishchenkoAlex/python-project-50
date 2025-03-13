@@ -7,10 +7,12 @@ def build_tree(data1, data2):
         item1 = data1.get(key)
         item2 = data2.get(key)
         if isinstance(item1, dict) and isinstance(item2, dict):
-            result.append({'key': key, 'type': 'nested', 'children': build_tree(item1, item2)})
+            result.append({'key': key, 'type': 'nested', 
+                           'children': build_tree(item1, item2)})
         elif key in data1 and key in data2:
             if item1 != item2:
-                result.append({'key': key, 'type': 'changed', 'old_value': item1, 'new_value': item2})
+                result.append({'key': key, 'type': 'changed', 
+                               'old_value': item1, 'new_value': item2})
             else:
                 result.append({'key': key, 'type': 'unchanged', 'value': item1})
         elif key in data1 and key not in data2:
