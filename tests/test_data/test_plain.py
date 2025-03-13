@@ -18,6 +18,7 @@ Property 'setting4' was removed
 
 def test_generate_diff_with_plain(expected_result):
     
-    assert generate_diff('tests/fixtures/file1.json', 'tests/fixtures/file2.json', 'plain').strip() == expected_result.strip()
+    assert generate_diff('tests/fixtures/file1.json',
+                        'tests/fixtures/file2.json', 'plain').strip() == expected_result.strip()
 
 
