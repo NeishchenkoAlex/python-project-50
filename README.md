@@ -40,9 +40,13 @@
 
 > gendiff tests/fixtures/file3.json tests/fixtures/file4.json
 
+[![asciicast](https://asciinema.org/a/LvIy5Mlft2wwEPBy71LKZIYsb.svg)](https://asciinema.org/a/LvIy5Mlft2wwEPBy71LKZIYsb)
+
 Опции:
 
 > gendiff -h
+
+[![asciicast](https://asciinema.org/a/JMdMVfsfXYDgq9XNQKg4MxItp.svg)](https://asciinema.org/a/JMdMVfsfXYDgq9XNQKg4MxItp)
 
 Форматы вывода:
 
@@ -58,9 +62,13 @@
 
 > gendiff -f plain tests/fixtures/file3.json tests/fixtures/file4.json
 
+[![asciicast](https://asciinema.org/a/SoHQJyEHWumYlHuIby9U6lH3c.svg)](https://asciinema.org/a/SoHQJyEHWumYlHuIby9U6lH3c)
+
 Формат json:
 
 > gendiff -f json tests/fixtures/file3.json tests/fixtures/file4.json
+
+[![asciicast](https://asciinema.org/a/Qtmtk0o9LRPG0mlI981Sd9sQx.svg)](https://asciinema.org/a/Qtmtk0o9LRPG0mlI981Sd9sQx)
 
 >#### - Тестирование утилиты:
 
