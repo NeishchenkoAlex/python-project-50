@@ -1,7 +1,3 @@
-from gendiff.logic_gendiff import load_file
-
-data1 = load_file('file3.json')
-data2 = load_file('file4.json')
 
 
 def build_tree(data1, data2):
