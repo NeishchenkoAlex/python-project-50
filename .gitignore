@@ -1,10 +1,13 @@
+hello.py
+__pycache__
+coverage.xml
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
-hello.py
-pycache
-coverage.xml
+
 # C extensions
 *.so
 
