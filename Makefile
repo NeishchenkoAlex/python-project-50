@@ -7,8 +7,6 @@ build:
 reinstall:
 	uv tool install --force dist/*.whl
 
-lint:
-	uv run ruff check --fix
 
 check: 
 	uv run ruff check gendiff
