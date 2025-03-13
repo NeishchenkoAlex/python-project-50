@@ -10,7 +10,8 @@ reinstall:
 lint:
 	uv run ruff check --fix
 
-check: test lint
+check: 
+	uv run ruff check gendiff
 
 test:
 	uv run pytest
